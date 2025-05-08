@@ -6,6 +6,7 @@ import android.content.Intent
 import android.telephony.TelephonyManager
 import android.util.Log
 
+//BroadcastReceiver for background tasks
 class CallReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         if (intent?.action == TelephonyManager.ACTION_PHONE_STATE_CHANGED) {
